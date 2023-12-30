@@ -15,7 +15,7 @@ const Forecast = ({ enteredCity, clicked}) => {
     const fetchData = async () => {
       try {
         
-        const response = await fetch(`http://api.weatherapi.com/v1/forecast.json?key=${apiKey}&q=${enteredCity}&days=3`);
+        const response = await fetch(`https://api.weatherapi.com/v1/forecast.json?key=${apiKey}&q=${enteredCity}&days=3`);
         const data = await response.json();
 
         // Update the state with the API response data
